@@ -1,0 +1,93 @@
+
+
+header {
+  background: rgba(4, 2, 124, 0.521);
+  width: 20%;
+  position: fixed;
+  z-index: 100;
+  font-size: 2em;
+  border-radius: 50%;
+}
+
+nav {
+    float: left;
+  }
+  nav ul {
+    list-style: none;
+    overflow: hidden; 
+  }
+
+  nav ul li {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;;
+    font-size: 20px;
+}
+
+nav ul li a {
+    display: block; 
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  nav ul li:hover {
+    background: #0fb300;
+    border-radius: 50%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(/assets/img/no-disponible.jpg);
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #0000006b;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 200px rgb(253, 59, 0);
+    color: antiquewhite;
+    border-radius: 2em;
+    text-align:center ;
+    border: 1px solid #ffffff;
+ 
+}
+h1 {
+    color: #fffccd;
+}
+form {
+    width: 70%;
+    height: auto;
+    margin-bottom: 20px;
+  margin-left: 9em;
+  color: antiquewhite;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+input, select {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 12px;
+    border-radius: 4px;
+    border: 1px solid #ffffff;
+    background-color: #5202029f;
+    color: aliceblue;
+}
+button {
+    padding: 10px 20px;
+    background-color: #021a6979;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #4cae4c;
+}

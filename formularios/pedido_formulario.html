@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Realizar Pedido</title>
+</head>
+<body>
+    <h2>Formulario de Pedido</h2>
+    <form action="/acciones/registrar_pedido.php" method="POST">
+        <label for="cliente_nombre">Nombre del Cliente:</label>
+        <input type="text" id="cliente_nombre" name="cliente_nombre" required><br><br>
+
+        <label for="cliente_email">Email del Cliente:</label>
+        <input type="email" id="cliente_email" name="cliente_email" required><br><br>
+
+        <label for="producto">Producto:</label>
+        <input type="text" id="producto" name="producto" required><br><br>
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" name="cantidad" required><br><br>
+
+        <label for="metodo_pago">Método de Pago:</label>
+        <select id="metodo_pago" name="metodo_pago" required>
+            <option value="Tarjeta">Tarjeta de Crédito</option>
+            <option value="Efectivo">Efectivo</option>
+            <option value="PayPal">PayPal</option>
+        </select><br><br>
+
+        <input type="submit" value="Realizar Pedido">
+    </form>
+</body>
+</html>

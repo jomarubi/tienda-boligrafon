@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/styles.css">
+    <title>Gestión de Ventas e Inventario</title>
+    <style>
+    </style>
+</head>
+<body>
+    <h1>Bienvenido a la Tienda</h1>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="/formularios/pedido_formulario.html">Realizar Pedido</a></li>
+            <li><a href="/formularios/cambiar_estado_formulario.html">Actualizar Estado de Pedido</a></li>
+            <li><a href="/acciones/registrar_pedido.php">Registrar Pedido</a></li> <!-- Si es un archivo PHP -->
+        </ul>
+    </nav>
+</header>
+    <div class="container">
+        <h1>Gestión de Ventas e Inventario</h1>
+        <form method="POST" action="/acciones/procesar.php">
+            <h2>Registrar Venta</h2>
+            <label for="producto">Producto</label>
+            <select id="producto" name="producto" required>
+                <option value="bolígrafos">Bolígrafos</option>
+                <option value="lápices">Lápices</option>
+                <option value="rotuladores">Rotuladores</option>
+                <option value="folios">Folios</option>
+            </select>
+            <label for="cantidad">Cantidad</label>
+            <input type="number" id="cantidad" name="cantidad" min="1" required>
+            <button type="submit" name="accion" value="venta">Registrar Venta</button>
+        </form>
+        <form method="POST" action="/acciones/procesar.php">
+            <h2>Registrar Reposición</h2>
+            <label for="producto_reposicion">Producto</label>
+            <select id="producto_reposicion" name="producto" required>
+                <option value="bolígrafos">Bolígrafos</option>
+                <option value="lápices">Lápices</option>
+                <option value="rotuladores">Rotuladores</option>
+                <option value="folios">Folios</option>
+            </select>
+            <label for="cantidad_reposicion">Cantidad</label>
+            <input type="number" id="cantidad_reposicion" name="cantidad" min="1" required>
+            <button type="submit" name="accion" value="reposicion">Registrar Reposición</button>
+        </form>
+    </div>
+</body>
+</html>
